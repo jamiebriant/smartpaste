@@ -12,11 +12,11 @@ Public Class AboutForm
         'Add any initialization after the InitializeComponent() call
         Me.AboutText.Text = _
             "Smart Paster Add-In 1.1 " & Environment.NewLine & _
-            "(C) 2004 Alex Papadimoulis " & Environment.NewLine & _
-            "alex@papadimoulis.com" & Environment.NewLine & _
+            "(C) 2010 Inedo " & Environment.NewLine & _
+            "www.inedo.com" & Environment.NewLine & _
             Environment.NewLine & _
-            "If you find this tool useful, feel free to drop me an email and " & _
-            "let me know. And remember, if you're thinking of using this to " & _
+            "If you find this tool useful, feel free to drop us an email and " & _
+            "let us know. And remember, if you're thinking of using this to " & _
             "easily paste you 100-line SQL Statements, I encourage you to " & _
             "strongly consider stored procedures :-)"
     End Sub

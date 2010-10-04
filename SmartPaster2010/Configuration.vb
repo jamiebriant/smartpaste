@@ -253,7 +253,7 @@ Friend NotInheritable Class Configuration
 
     ''' -----------------------------------------------------------------------------
     ''' <summary>
-    '''  Indicates the approximage length at which to wrap lines
+    '''  Indicates the approximate image length at which to wrap lines
     ''' </summary>
     ''' -----------------------------------------------------------------------------
     Public Shared Property WrapAt() As Integer

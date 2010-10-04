@@ -905,7 +905,6 @@ Friend NotInheritable Class SmartPaster
     '''   Public method to paste format clipboard text into a specified region
     ''' </summary>
     ''' <param name="application">application to insert</param>
-    ''' <param name="region">region name to use</param>
     ''' -----------------------------------------------------------------------------
     Public Sub PasteAsRegion(ByVal application As EnvDTE80.DTE2)
         'get the region name

@@ -75,37 +75,37 @@ Friend Class SmartPasterForm
     Friend WithEvents VBLinebreakEscapeLabel As System.Windows.Forms.Label
     Friend WithEvents VBTabEscapeLabel As System.Windows.Forms.Label
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.Save = New System.Windows.Forms.Button
-        Me.GeneralGroup = New System.Windows.Forms.GroupBox
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.AppendFormatOnStringBuilder = New System.Windows.Forms.CheckBox
-        Me.WrapAt = New System.Windows.Forms.TextBox
-        Me.EnableWordWrap = New System.Windows.Forms.CheckBox
-        Me.WrapAtLabel = New System.Windows.Forms.Label
-        Me.AutoFormatAfterPaste = New System.Windows.Forms.CheckBox
-        Me.EnablePasteAsComment = New System.Windows.Forms.CheckBox
-        Me.EnablePasteAsRegion = New System.Windows.Forms.CheckBox
-        Me.EnablePasteAsStringBuilder = New System.Windows.Forms.CheckBox
-        Me.EnablePasteAsString = New System.Windows.Forms.CheckBox
+        Me.components = New System.ComponentModel.Container()
+        Me.Save = New System.Windows.Forms.Button()
+        Me.GeneralGroup = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.AppendFormatOnStringBuilder = New System.Windows.Forms.CheckBox()
+        Me.WrapAt = New System.Windows.Forms.TextBox()
+        Me.EnableWordWrap = New System.Windows.Forms.CheckBox()
+        Me.WrapAtLabel = New System.Windows.Forms.Label()
+        Me.AutoFormatAfterPaste = New System.Windows.Forms.CheckBox()
+        Me.EnablePasteAsComment = New System.Windows.Forms.CheckBox()
+        Me.EnablePasteAsRegion = New System.Windows.Forms.CheckBox()
+        Me.EnablePasteAsStringBuilder = New System.Windows.Forms.CheckBox()
+        Me.EnablePasteAsString = New System.Windows.Forms.CheckBox()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.CSVerbatimLiteralsSpanLines = New System.Windows.Forms.CheckBox
-        Me.CSDefaultLanguage = New System.Windows.Forms.CheckBox
-        Me.CSLinebreakEscape = New System.Windows.Forms.ComboBox
-        Me.CSTabEscape = New System.Windows.Forms.ComboBox
-        Me.CSVerbatimLiterals = New System.Windows.Forms.CheckBox
-        Me.VBDefaultLanguage = New System.Windows.Forms.CheckBox
-        Me.VBLinebreakEscape = New System.Windows.Forms.ComboBox
-        Me.VBTabEscape = New System.Windows.Forms.ComboBox
-        Me.Cancel = New System.Windows.Forms.Button
-        Me.CSLinebreakEscapeLabel = New System.Windows.Forms.Label
-        Me.CSTabEscapeLabel = New System.Windows.Forms.Label
-        Me.VBLinebreakEscapeLabel = New System.Windows.Forms.Label
-        Me.VBTabEscapeLabel = New System.Windows.Forms.Label
-        Me.About = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.CSGroup = New System.Windows.Forms.GroupBox
-        Me.VBGroup = New System.Windows.Forms.GroupBox
+        Me.CSVerbatimLiteralsSpanLines = New System.Windows.Forms.CheckBox()
+        Me.CSDefaultLanguage = New System.Windows.Forms.CheckBox()
+        Me.CSLinebreakEscape = New System.Windows.Forms.ComboBox()
+        Me.CSTabEscape = New System.Windows.Forms.ComboBox()
+        Me.CSVerbatimLiterals = New System.Windows.Forms.CheckBox()
+        Me.VBDefaultLanguage = New System.Windows.Forms.CheckBox()
+        Me.VBLinebreakEscape = New System.Windows.Forms.ComboBox()
+        Me.VBTabEscape = New System.Windows.Forms.ComboBox()
+        Me.Cancel = New System.Windows.Forms.Button()
+        Me.CSLinebreakEscapeLabel = New System.Windows.Forms.Label()
+        Me.CSTabEscapeLabel = New System.Windows.Forms.Label()
+        Me.VBLinebreakEscapeLabel = New System.Windows.Forms.Label()
+        Me.VBTabEscapeLabel = New System.Windows.Forms.Label()
+        Me.About = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.CSGroup = New System.Windows.Forms.GroupBox()
+        Me.VBGroup = New System.Windows.Forms.GroupBox()
         Me.GeneralGroup.SuspendLayout()
         Me.CSGroup.SuspendLayout()
         Me.VBGroup.SuspendLayout()
@@ -160,7 +160,7 @@ Friend Class SmartPasterForm
         Me.AppendFormatOnStringBuilder.TabIndex = 2
         Me.AppendFormatOnStringBuilder.Text = "AppendFormat on StringBuilder"
         Me.ToolTip.SetToolTip(Me.AppendFormatOnStringBuilder, "Indicates whether the AppendFormat method (along with {0} and {1} replacements) s" & _
-        "hould be used.")
+                "hould be used.")
         '
         'WrapAt
         '
@@ -170,7 +170,6 @@ Friend Class SmartPasterForm
         Me.WrapAt.Name = "WrapAt"
         Me.WrapAt.Size = New System.Drawing.Size(35, 21)
         Me.WrapAt.TabIndex = 1
-        Me.WrapAt.Text = ""
         Me.ToolTip.SetToolTip(Me.WrapAt, "Approximate column at which to wrap text at")
         '
         'EnableWordWrap
@@ -260,7 +259,7 @@ Friend Class SmartPasterForm
         Me.CSVerbatimLiteralsSpanLines.TabIndex = 3
         Me.CSVerbatimLiteralsSpanLines.Text = "Span Lines"
         Me.ToolTip.SetToolTip(Me.CSVerbatimLiteralsSpanLines, "Indicates that Verbatim Literals should span multiple lines and not escape any co" & _
-        "ntrol characters.")
+                "ntrol characters.")
         '
         'CSDefaultLanguage
         '
@@ -272,10 +271,11 @@ Friend Class SmartPasterForm
         Me.CSDefaultLanguage.TabIndex = 2
         Me.CSDefaultLanguage.Text = "Default Language"
         Me.ToolTip.SetToolTip(Me.CSDefaultLanguage, "Indicates that C# should be used when the extension of the active file is not "".C" & _
-        "S"" or "".VB""")
+                "S"" or "".VB""")
         '
         'CSLinebreakEscape
         '
+        Me.CSLinebreakEscape.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CSLinebreakEscape.Font = New System.Drawing.Font("Trebuchet MS", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CSLinebreakEscape.Items.AddRange(New Object() {"<none>", "\n", "\r\n", "ControlChars.NewLine", "Environment.NewLine"})
         Me.CSLinebreakEscape.Location = New System.Drawing.Point(120, 65)
@@ -283,10 +283,11 @@ Friend Class SmartPasterForm
         Me.CSLinebreakEscape.Size = New System.Drawing.Size(130, 24)
         Me.CSLinebreakEscape.TabIndex = 0
         Me.ToolTip.SetToolTip(Me.CSLinebreakEscape, "String to insert when escaping a linebreak. Strings starting with ""\"" are interpr" & _
-        "eted as escape sequences.")
+                "eted as escape sequences.")
         '
         'CSTabEscape
         '
+        Me.CSTabEscape.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CSTabEscape.Font = New System.Drawing.Font("Trebuchet MS", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CSTabEscape.Items.AddRange(New Object() {"<none>", "\t", "ControlChars.Tab"})
         Me.CSTabEscape.Location = New System.Drawing.Point(120, 90)
@@ -294,7 +295,7 @@ Friend Class SmartPasterForm
         Me.CSTabEscape.Size = New System.Drawing.Size(130, 24)
         Me.CSTabEscape.TabIndex = 0
         Me.ToolTip.SetToolTip(Me.CSTabEscape, "String to insert when escaping a tab. Strings starting with ""\"" are interpreted a" & _
-        "s escape sequences.")
+                "s escape sequences.")
         '
         'CSVerbatimLiterals
         '
@@ -306,7 +307,7 @@ Friend Class SmartPasterForm
         Me.CSVerbatimLiterals.TabIndex = 2
         Me.CSVerbatimLiterals.Text = "Verbatim Literals"
         Me.ToolTip.SetToolTip(Me.CSVerbatimLiterals, "Indicates whether string literals should be prefixed with ""@"" and not use any esc" & _
-        "ape sequences. Note that escape strings will be concatenated if selected.")
+                "ape sequences. Note that escape strings will be concatenated if selected.")
         '
         'VBDefaultLanguage
         '
@@ -318,10 +319,11 @@ Friend Class SmartPasterForm
         Me.VBDefaultLanguage.TabIndex = 2
         Me.VBDefaultLanguage.Text = "Default Language"
         Me.ToolTip.SetToolTip(Me.VBDefaultLanguage, "Indicates that Visual Basic should be used when the extension of the active file " & _
-        "is not "".CS"" or "".VB""")
+                "is not "".CS"" or "".VB""")
         '
         'VBLinebreakEscape
         '
+        Me.VBLinebreakEscape.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.VBLinebreakEscape.Font = New System.Drawing.Font("Trebuchet MS", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VBLinebreakEscape.Items.AddRange(New Object() {"<none>", "ControlChars.NewLine", "Environment.NewLine", "vbCrLf"})
         Me.VBLinebreakEscape.Location = New System.Drawing.Point(120, 40)
@@ -332,6 +334,7 @@ Friend Class SmartPasterForm
         '
         'VBTabEscape
         '
+        Me.VBTabEscape.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.VBTabEscape.Font = New System.Drawing.Font("Trebuchet MS", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VBTabEscape.Items.AddRange(New Object() {"<none>", "ControlChars.Tab", "vbTab"})
         Me.VBTabEscape.Location = New System.Drawing.Point(120, 65)
@@ -358,7 +361,7 @@ Friend Class SmartPasterForm
         Me.CSLinebreakEscapeLabel.TabIndex = 1
         Me.CSLinebreakEscapeLabel.Text = "Linebreak Escape"
         Me.ToolTip.SetToolTip(Me.CSLinebreakEscapeLabel, "String to insert when escaping a linebreak. Strings starting with ""\"" are interpr" & _
-        "eted as escape sequences.")
+                "eted as escape sequences.")
         '
         'CSTabEscapeLabel
         '
@@ -369,7 +372,7 @@ Friend Class SmartPasterForm
         Me.CSTabEscapeLabel.TabIndex = 1
         Me.CSTabEscapeLabel.Text = "Tab Escape"
         Me.ToolTip.SetToolTip(Me.CSTabEscapeLabel, "String to insert when escaping a tab. Strings starting with ""\"" are interpreted a" & _
-        "s escape sequences.")
+                "s escape sequences.")
         '
         'VBLinebreakEscapeLabel
         '
@@ -457,8 +460,10 @@ Friend Class SmartPasterForm
         Me.Font = New System.Drawing.Font("Trebuchet MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "SmartPasterForm"
+        Me.ShowInTaskbar = False
         Me.Text = "Smart Paster 1.1 Add-In Configuration"
         Me.GeneralGroup.ResumeLayout(False)
+        Me.GeneralGroup.PerformLayout()
         Me.CSGroup.ResumeLayout(False)
         Me.VBGroup.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -475,45 +480,42 @@ Friend Class SmartPasterForm
         End Try
 
         'would do "With Configuration" except it's a singleton class and the
-        'With statement requires a non-type indentifier
-        Dim c As Configuration : With c
+        'With statement requires a non-type identifier
 
-            'general options
-            .EnablePasteAsComment = EnablePasteAsComment.Checked
-            .EnablePasteAsRegion = EnablePasteAsRegion.Checked
-            .EnablePasteAsString = EnablePasteAsString.Checked
-            .EnablePasteAsStringBuilder = EnablePasteAsStringBuilder.Checked
-            .AppendFormatOnStringBuilder = AppendFormatOnStringBuilder.Checked
-            .EnableWordWrap = EnableWordWrap.Checked
-            .WrapAt = CInt(WrapAt.Text)
-            .AutoFormatAfterPaste = AutoFormatAfterPaste.Checked
-            If VBDefaultLanguage.Checked _
-                Then .DefaultLanguage = "Visual Basic" _
-                Else .DefaultLanguage = "C#"
+        'general options
+        Configuration.EnablePasteAsComment = EnablePasteAsComment.Checked
+        Configuration.EnablePasteAsRegion = EnablePasteAsRegion.Checked
+        Configuration.EnablePasteAsString = EnablePasteAsString.Checked
+        Configuration.EnablePasteAsStringBuilder = EnablePasteAsStringBuilder.Checked
+        Configuration.AppendFormatOnStringBuilder = AppendFormatOnStringBuilder.Checked
+        Configuration.EnableWordWrap = EnableWordWrap.Checked
+        Configuration.WrapAt = CInt(WrapAt.Text)
+        Configuration.AutoFormatAfterPaste = AutoFormatAfterPaste.Checked
+        If VBDefaultLanguage.Checked _
+            Then Configuration.DefaultLanguage = "Visual Basic" _
+            Else Configuration.DefaultLanguage = "C#"
 
-            'vb
-            .VBNewLine = VBLinebreakEscape.Text
-            .VBEscapeLinebreaks = Not ( _
-                VBLinebreakEscape.Text.StartsWith("<none>") _
-                Or VBLinebreakEscape.Text = String.Empty)
-            .VBTab = VBTabEscape.Text
-            .VBEscapeTabs = Not ( _
-                VBTabEscape.Text.StartsWith("<none>") _
-                Or VBTabEscape.Text = String.Empty)
+        'vb
+        Configuration.VBNewLine = VBLinebreakEscape.Text
+        Configuration.VBEscapeLinebreaks = Not ( _
+            VBLinebreakEscape.Text.StartsWith("<none>") _
+            Or VBLinebreakEscape.Text = String.Empty)
+        Configuration.VBTab = VBTabEscape.Text
+        Configuration.VBEscapeTabs = Not ( _
+            VBTabEscape.Text.StartsWith("<none>") _
+            Or VBTabEscape.Text = String.Empty)
 
-            'c#
-            .CSNewLine = CSLinebreakEscape.Text
-            .CSEscapeLinebreaks = Not ( _
-                CSLinebreakEscape.Text.StartsWith("<none>") _
-                Or CSLinebreakEscape.Text = String.Empty)
-            .CSTab = CSTabEscape.Text
-            .CSEscapeTabs = Not ( _
-                CSTabEscape.Text.StartsWith("<none>") _
-                Or CSTabEscape.Text = String.Empty)
-            .CSVerbatimLiterals = CSVerbatimLiterals.Checked
-            .CSVerbatimLiteralsSpanLines = CSVerbatimLiteralsSpanLines.Checked
-
-        End With
+        'c#
+        Configuration.CSNewLine = CSLinebreakEscape.Text
+        Configuration.CSEscapeLinebreaks = Not ( _
+            CSLinebreakEscape.Text.StartsWith("<none>") _
+            Or CSLinebreakEscape.Text = String.Empty)
+        Configuration.CSTab = CSTabEscape.Text
+        Configuration.CSEscapeTabs = Not ( _
+            CSTabEscape.Text.StartsWith("<none>") _
+            Or CSTabEscape.Text = String.Empty)
+        Configuration.CSVerbatimLiterals = CSVerbatimLiterals.Checked
+        Configuration.CSVerbatimLiteralsSpanLines = CSVerbatimLiteralsSpanLines.Checked
 
         Close()
     End Sub
@@ -528,34 +530,32 @@ Friend Class SmartPasterForm
     End Sub
 
     Private Sub SmartPasterForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Dim c As Configuration : With c
 
-            'general options
-            EnablePasteAsComment.Checked = .EnablePasteAsComment
-            EnablePasteAsRegion.Checked = .EnablePasteAsRegion
-            EnablePasteAsString.Checked = .EnablePasteAsString
-            EnablePasteAsStringBuilder.Checked = .EnablePasteAsStringBuilder
-            AppendFormatOnStringBuilder.Checked = .AppendFormatOnStringBuilder
-            EnableWordWrap.Checked = .EnableWordWrap
-            WrapAt.Text = .WrapAt.ToString
-            AutoFormatAfterPaste.Checked = .AutoFormatAfterPaste
-            VBDefaultLanguage.Checked = (.DefaultLanguage = "Visual Basic")
-            CSDefaultLanguage.Checked = Not VBDefaultLanguage.Checked
+        'general options
+        EnablePasteAsComment.Checked = Configuration.EnablePasteAsComment
+        EnablePasteAsRegion.Checked = Configuration.EnablePasteAsRegion
+        EnablePasteAsString.Checked = Configuration.EnablePasteAsString
+        EnablePasteAsStringBuilder.Checked = Configuration.EnablePasteAsStringBuilder
+        AppendFormatOnStringBuilder.Checked = Configuration.AppendFormatOnStringBuilder
+        EnableWordWrap.Checked = Configuration.EnableWordWrap
+        WrapAt.Text = Configuration.WrapAt.ToString
+        AutoFormatAfterPaste.Checked = Configuration.AutoFormatAfterPaste
+        VBDefaultLanguage.Checked = (Configuration.DefaultLanguage = "Visual Basic")
+        CSDefaultLanguage.Checked = Not VBDefaultLanguage.Checked
 
-            'vb
-            VBLinebreakEscape.Text = .VBNewLine
-            If Not .VBEscapeLinebreaks Then VBLinebreakEscape.Text = "<none>"
-            VBTabEscape.Text = .VBTab
-            If Not .VBEscapeTabs Then VBTabEscape.Text = "<none>"
+        'vb
+        VBLinebreakEscape.Text = Configuration.VBNewLine
+        If Not Configuration.VBEscapeLinebreaks Then VBLinebreakEscape.Text = "<none>"
+        VBTabEscape.Text = Configuration.VBTab
+        If Not Configuration.VBEscapeTabs Then VBTabEscape.Text = "<none>"
 
-            'c#
-            CSLinebreakEscape.Text = .CSNewLine
-            If Not .CSEscapeLinebreaks Then CSLinebreakEscape.Text = "<none>"
-            CSTabEscape.Text = .CSTab
-            If Not .CSEscapeTabs Then CSTabEscape.Text = "<none>"
-            CSVerbatimLiterals.Checked = .CSVerbatimLiterals
-            CSVerbatimLiteralsSpanLines.Checked = .CSVerbatimLiteralsSpanLines
-        End With
+        'c#
+        CSLinebreakEscape.Text = Configuration.CSNewLine
+        If Not Configuration.CSEscapeLinebreaks Then CSLinebreakEscape.Text = "<none>"
+        CSTabEscape.Text = Configuration.CSTab
+        If Not Configuration.CSEscapeTabs Then CSTabEscape.Text = "<none>"
+        CSVerbatimLiterals.Checked = Configuration.CSVerbatimLiterals
+        CSVerbatimLiteralsSpanLines.Checked = Configuration.CSVerbatimLiteralsSpanLines
 
         WrapAt.Enabled = EnableWordWrap.Checked
         CSVerbatimLiteralsSpanLines.Enabled = CSVerbatimLiterals.Checked
